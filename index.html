@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <!-- PHONE -->
+      <section class="phone">
+        <div class="phone-top">
+          <div class="camera"></div>
+          <div class="speaker"></div>
+        </div>
+
+        <section class="screen">
+          <div class="screen-top">
+            <div class="screen-top-col cellular-info">
+              <i class="fa-sharp fa-solid fa-signal-bars mr"></i
+              ><span class="mr">o2-de</span><i class="fa-duotone fa-wifi"></i>
+            </div>
+            <div class="screen-top-col clock">13:37</div>
+            <div class="screen-top-col battery-info">
+              <span class="mr">100%</span>
+              <i class="fa-regular fa-battery-full"></i>
+            </div>
+          </div>
+          <input type="text" name="input" id="input" placeholder="0" readonly />
+
+          <div class="numpad">
+            <div class="row">
+              <div class="col">
+                <button class="misc button" data-value="AC" id="clear">
+                  AC
+                </button>
+              </div>
+              <div class="col">
+                <button class="misc button" data-value="negative">+/-</button>
+              </div>
+              <div class="col">
+                <button class="misc button" data-value="%">%</button>
+              </div>
+              <div class="col">
+                <button class="operator orange button" data-value="/">÷</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="operand button" data-value="7">7</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="8">8</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="9">9</button>
+              </div>
+              <div class="col">
+                <button class="operator orange button" data-value="*">x</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="operand button" data-value="4">4</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="5">5</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="6">6</button>
+              </div>
+              <div class="col">
+                <button class="operator orange button" data-value="-">-</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="operand button" data-value="1">1</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="2">2</button>
+              </div>
+              <div class="col">
+                <button class="operand button" data-value="3">3</button>
+              </div>
+              <div class="col">
+                <button class="operator orange button" data-value="+">+</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="operand zero button" data-value="0">0</button>
+              </div>
+              <div class="col decimal-col">
+                <button class="operand button" data-value=".">.</button>
+              </div>
+              <div class="col">
+                <button class="orange button" data-value="=" id="eval">
+                  =
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="phone-bottom">
+          <div class="home-button"></div>
+        </div>
+      </section>
+    </main>
+    <script src="calc.js"></script>
+  </body>
+</html>
